@@ -10,21 +10,39 @@
   <header class="navigation-container">
     <nav role="navigation">
       <ul class="tab-list">
-        <li><img src="/EstonianRentCar/images/Capt1ure.PNG" alt="Estonian Rent Car" width="400" height="100"></li>
-        <li><a href="/EstonianRentCar/index.html">Главная</a></li>
-        <li><a href="/EstonianRentCar/pages/cars.html">Автомобили</a></li>
-        <li><a href="/EstonianRentCar/pages/parks.html">Парковки</a></li>
-        <li><a href="/EstonianRentCar/pages/cars.html">Информация</a></li>
-        <li class="right-align"><a href="/EstonianRentCar/pages/singup.html">Войти</a></li>
+        <li><a href="/index.html">Главная</a></li>
+        <li><a href="/pages/cars.html">Автомобили</a></li>
+        <li><a href="/pages/parks.html">Парковки</a></li>
+        <li><a href="/pages/cars.html">Информация</a></li>
+        <li class="right-align"><a href="/pages/singup.html">Войти</a></li>
       </ul>
     </nav>
   </header>
 
-  <div class="page-content">
-    <div class="banner">
-      <p>Удобные условия: Мы предлагаем гибкие условия аренды, чтобы вы могли выбрать то, что вам подходит.      </p>
+  <div class="slider">
+    <div class="slides">
+      <img src="images/cars.jpg" alt="Slide 1">
+      <img src="images/car-park.jpg" alt="Slide 2">
+      <img src="/images/car-info.jpg" alt="Slide 3">
+    </div>
+    <button class="prev" onclick="prevSlide()">Prev</button>
+    <button class="next" onclick="nextSlide()">Next</button>
+  </div>
+
+  <div class="block1">
+    <div class="page-text">
+      <p>Удобные условия: Мы предлагаем гибкие условия аренды, чтобы вы могли выбрать то, что вам подходит.</p>
     </div>
   </div>
+
+  
+  <div class="footer">
+      <a href="/pages/login.html">Помощь</a>
+      <a href="/pages/login.html">Реклама</a>
+      <a href="/pages/login.html">Настройки cookie</a>
+  </div>
+
+  <script src="/scripts/slider.js"></script>
 
 </body>
 </html>

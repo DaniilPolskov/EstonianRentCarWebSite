@@ -3,7 +3,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 15px 20px; 
-  background-color: #EBF5FF; 
+  background-color: #000000; 
   border-radius: 4px; 
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
 }
@@ -24,7 +24,7 @@
   display: block;
   padding: 12px 20px; 
   text-decoration: none;
-  color: #333;
+  color: #fff;
   font-weight: normal;
   transition: background-color 0.3s ease;
 }
@@ -46,14 +46,6 @@
   margin-left: auto;
 }
 
-.banner {
-  position: relative;
-  background: url('/EstonianRentCar/images/banner.jpg') center center/contain;
-  padding: 220px;
-  border-radius: 10px;
-  z-index: 0;
-  left: 20px;
-}
 
 .banner::before {
   content: "";
@@ -65,4 +57,88 @@
   border-radius: 10px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
   z-index: -1;
+}
+
+.body {
+  margin: 0;
+  padding: 0;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px; 
+}
+
+.footer a:first-child {
+  margin-left: 0; 
+}
+
+.footer a:last-child {
+  margin-right: 0;
+}
+
+.slider {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.slides img {
+  width: 40%;
+  height: auto;
+  filter: blur(8px);
+  transition: filter 0.5s ease;
+}
+
+.slides img:hover {
+  filter: blur(0);
+}
+
+button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
+.block1 {
+  position: fixed;
+  width: 100%;
+  background-color: #333;
+  color: hsl(0, 0%, 0%);
+  text-align: center;
+}
+
+.page-text {
+  font-weight: bold;
+  color: #ffffff;
 }
