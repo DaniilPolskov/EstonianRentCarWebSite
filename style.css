@@ -1,6 +1,6 @@
 .navigation-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   padding: 15px 20px; 
   background-color: #000000; 
@@ -16,6 +16,7 @@
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; 
 }
 
+
 .tab-list li {
   margin-right: 15px;
 }
@@ -24,8 +25,8 @@
   display: block;
   padding: 12px 20px; 
   text-decoration: none;
-  color: #fff;
-  font-weight: normal;
+  color: #ffffff;
+  font-weight: bold;
   transition: background-color 0.3s ease;
 }
 
@@ -43,9 +44,8 @@
 }
 
 .right-align {
-  margin-left: auto;
+  margin-left: auto;  
 }
-
 
 .banner::before {
   content: "";
