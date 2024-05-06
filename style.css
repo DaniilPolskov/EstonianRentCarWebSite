@@ -1,4 +1,6 @@
 .navigation-container {
+  margin-top: 0;
+  margin-bottom: 0;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -89,56 +91,16 @@
   margin-right: 0;
 }
 
-.slider {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-}
-
-.slides {
-  display: flex;
-  transition: transform 0.5s ease;
-}
-
-.slides img {
-  width: 40%;
-  height: auto;
-  filter: blur(8px);
-  transition: filter 0.5s ease;
-}
-
-.slides img:hover {
-  filter: blur(0);
-}
-
-button {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-}
-
-.prev {
-  left: 0;
-}
-
-.next {
-  right: 0;
-}
-
 .block1 {
+  font-family: "Russo One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   position: fixed;
   width: 100%;
   background-color: #333;
-  color: hsl(0, 0%, 0%);
   text-align: center;
 }
 
 .page-text {
-  font-weight: bold;
   color: #ffffff;
 }
