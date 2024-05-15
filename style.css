@@ -1,3 +1,10 @@
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  padding-bottom: 60px;
+}
+
 .navigation-container {
   margin-top: 0;
   margin-bottom: 0;
@@ -17,7 +24,6 @@
   padding: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; 
 }
-
 
 .tab-list li {
   margin-right: 15px;
@@ -80,28 +86,53 @@
 .footer a {
   color: #fff;
   text-decoration: none;
-  margin: 0 10px; 
-}
-
-.footer a:first-child {
-  margin-left: 0; 
-}
-
-.footer a:last-child {
-  margin-right: 0;
+  margin: 0 20px; 
 }
 
 .block1 {
   font-family: "Russo One", sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   font-style: normal;
-  position: fixed;
   width: 100%;
+  background-color: inherit;
   background-color: #333;
   text-align: center;
-}
-
-.page-text {
   color: #ffffff;
+
 }
 
+.form-text {
+  color: #000000;
+  font-family: "Russo One", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  background-color: inherit;
+}
+
+.block2 {
+  display: flex;
+  background-color: #fff; 
+  padding: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+form-auth {
+  font-family: "Cuprum", sans-serif;
+  width: 100%;
+  max-width: 400px;
+  background-color:#ffffff;
+}
+
+form-feedback {
+  font-family: "Cuprum", sans-serif;
+  width: 100%;
+  max-width: 400px;
+  background-color:#ffffff;
+  border-radius: 2%;
+}
+
+.container {
+  background-color: #333;
+  padding: 20px 0; 
+}
