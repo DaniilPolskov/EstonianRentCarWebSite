@@ -136,3 +136,33 @@ form-feedback {
   background-color: #333;
   padding: 20px 0; 
 }
+
+.autod-img-block a {
+  display: inline-block;
+  margin: 0 7px 7px 0;
+  text-decoration: none;
+}
+
+.autod-img-block a img {
+  width: calc(50% - 7px); 
+}
+
+.autod-img-block a:nth-child(2n) {
+  margin-right: 0;
+}
+
+.autod-img-block a:nth-child(odd) {
+  margin-left: 0;
+}
+
+.autod-img-block a {
+  background-color: #333;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.autod-img-block a:hover {
+  background-color: #3c434b;
+}

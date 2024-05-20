@@ -4,30 +4,70 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Estonian Rent Car</title>
-  <link rel="stylesheet" href="/EstonianRentCar/style.css">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/slider.css">
+  <link rel="stylesheet" href="/auth.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400..700;1,400..700&family=Poetsen+One&family=Rubik+Mono+One&family=Russo+One&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="main-body-content">
   <header class="navigation-container">
     <nav role="navigation">
       <ul class="tab-list">
-        <li>
-          <a href="/">
-            <img src="/images/rent-car.PNG" alt="Estonian Rent Car" height="20">
-          </a>
-        </li>
-        <li>
-          <a href="/EstonianRentCar/pages/cars.html">Автомобили</a>
-        </li>
-        <li class="right-align">
-          <a href="/EstonianRentCar/pages/singup.html">Войти</a>
-        </li>
+        <li><a href="/index.html">HOME</a></li>
+        <li><a href="/pages/cars.html">CARS</a></li>
+        <li><a href="/pages/parks.html">PARKS</a></li>
+        <li><a href="/pages/cars.html">ABOUT</a></li>
+        <li><a href="#" id="singup">SING UP</a></li>
       </ul>
     </nav>
   </header>
 
-  <div class="page-content">
-    <p>Estonian Car Rent - eto</p>
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <form-auth action="/php/login.php" method="post">
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username"><br>
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password"><br>
+        <input type="submit" value="Login">
+      </form-auth>
+    </div>
   </div>
+  <div>
+
+    <div class="autod-img-block">
+      <a href="car1.html"><img src="/images/car1.jpg" alt="car1">
+        <span>Mercedes-AMG GT</span></a>
+      <a href="car2.html"><img src="/images/car2.jpg" alt="car2">
+        <span>Mercedes-Benz A-класс</span></a>
+      <a href="car3.html"><img src="/images/car3.jpg" alt="car3">
+        <span>W212 Mercedes</span></a>
+      <a href="car4.html"><img src="/images/car4.jpg" alt="car4">
+        <span>Mini Cooper Classic</span></a>
+      <a href="car5.html"><img src="/images/car5.jpg" alt="car5">
+        <span>Mercedes-Benz C-Класс 2018</span></a>
+      <a href="car6.html"><img src="/images/car6.jpg" alt="car6">
+        <span>Mercedes-Benz G-класс</span></a>
+    </div>
+        
+
+    <div class="container">
+      <div class="block1">
+        <p>Удобные условия: Мы предлагаем гибкие условия аренды, чтобы вы могли выбрать то, что вам подходит.</p>
+      </div>
+    </div>
+
+  <div class="footer">
+    <a href="/pages/login.html">Помощь</a>
+    <a href="/pages/login.html">Реклама</a>
+    <a href="/pages/login.html">Настройки cookie</a>    
+  </div>
+
+  <script src="/scripts/slider.js"></script>
+  <script src="/scripts/auth.js"></script>
 
 </body>
 </html>
