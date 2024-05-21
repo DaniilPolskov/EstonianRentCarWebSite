@@ -3,25 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Estonian Rent Car</title>
-  <link rel="stylesheet" href="/EstonianRentCar/style.css">
+  <title>Document</title>
 </head>
 <body>
-  <header class="navigation-container">
-    <nav role="navigation">
-      <ul class="tab-list">
-        <a href="/">
-          <img src="/images/rent-car.PNG" alt="Estonian Rent Car" height="20">
-        </a>
-        <li><a href="/pages/cars.html">Автомобили</a></li>
-        <li class="right-align"><a href="/pages/singup.html">Войти</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <div class="page-content">
-    <p>Estonian Car Rent - eto</p>
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <form-auth action="/php/login.php" method="post">
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username"><br>
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password"><br>
+        <input type="submit" value="Login">
+      </form-auth>
+    </div>
   </div>
-
 </body>
 </html>
