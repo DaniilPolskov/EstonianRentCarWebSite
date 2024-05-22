@@ -1,59 +1,72 @@
 .slider {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-    background-color: #333;
-  }
-  
-  .slides {
-    display: flex;
-    transition: transform 0.5s ease;
-  }
-  
-  .slides img {
-    flex: 1;
-    height: auto;
-    filter: blur(8px);
-    transition: filter 0.5s ease;
-  }
-  
-  .slides img:hover {
-    filter: blur(0);
-  }
-  
-  button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-  }
-  
-  .prev {
-    left: 0;
-    background-image: url("/images/prev.png");
-    background-size: cover;
-    width: 70px;
-    height: 70px;
-    border-radius: 40%;
-    cursor: pointer;
-  }
-  
-  .next {
-    right: 0;
-    background-image: url("/images/next.png");
-    background-size: cover;
-    width: 70px;
-    height: 70px;
-    border-radius: 40%;
-    cursor: pointer;
-  }
-  
-  .slide-container {
-    position: relative;
-    display: inline-block;
-  }
-  
+  position: relative;
+  width: 100%;
+  height: 400px; /* Фиксированная высота слайдера */
+  overflow: hidden;
+  background-color: #333;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease;
+  height: 100%;
+  width: 400%; /* Четыре слайда по 100% каждый */
+}
+
+.slides img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Масштабирует изображение и обрезает лишние части */
+}
+
+button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.prev {
+  left: 0;
+  background-image: url("/images/prev.png");
+  background-size: cover;
+  width: 70px;
+  height: 70px;
+  border-radius: 40%;
+  cursor: pointer;
+}
+
+.next {
+  right: 0;
+  background-image: url("/images/next.png");
+  background-size: cover;
+  width: 70px;
+  height: 70px;
+  border-radius: 40%;
+  cursor: pointer;
+}
+
+.indicators {
+  text-align: center;
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+}
+
+.indicators .dot {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.indicators .dot.active {
+  background-color: #717171;
+}

@@ -1,36 +1,63 @@
 let slideIndex = 0;
-const intervalTime = 2500;
-let slides;
+const intervalTime = 3000;
+const slidesContainer = document.querySelector('.slides');
+const slides = document.querySelectorAll('.slides img');
+const indicatorsContainer = document.querySelector('.indicators');
 let intervalId;
 
-function showSlides() {
-  slides = document.querySelectorAll('.slides img');
-  slideIndex++;
-  if (slideIndex >= slides.length) {
-    slideIndex = 0;
-  }
+function updateSlides() {
   const slideWidth = slides[0].clientWidth;
-  document.querySelector('.slides').style.transform = `translateX(${-slideIndex * slideWidth}px)`;
+  slidesContainer.style.transform = `translateX(${-slideIndex * slideWidth}px)`;
+  dots.forEach((dot, index) => {
+    dot.classList.toggle('active', index === slideIndex);
+  });
 }
 
-intervalId = setInterval(showSlides, intervalTime);
+function setCurrentSlide(n) {
+  slideIndex = n;
+  updateSlides();
+}
+
+function nextSlide() {
+  slideIndex = (slideIndex + 1) % slides.length;
+  updateSlides();
+}
+
+function prevSlide() {
+  slideIndex = (slideIndex - 1 + slides.length) % slides.length;
+  updateSlides();
+}
+
+function startInterval() {
+  intervalId = setInterval(() => {
+    nextSlide();
+  }, intervalTime);
+}
+
+slides.forEach((_, index) => {
+  const dot = document.createElement('span');
+  dot.classList.add('dot');
+  dot.addEventListener('click', () => {
+    clearInterval(intervalId);
+    setCurrentSlide(index);
+    startInterval();
+  });
+  indicatorsContainer.appendChild(dot);
+});
+
+const dots = document.querySelectorAll('.indicators .dot');
 
 document.querySelector('.prev').addEventListener('click', () => {
   clearInterval(intervalId);
-  slideIndex--;
-  if (slideIndex < 0) {
-    slideIndex = slides.length - 1;
-  }
-  const slideWidth = slides[0].clientWidth;
-  document.querySelector('.slides').style.transform = `translateX(${-slideIndex * slideWidth}px)`;
+  prevSlide();
+  startInterval();
 });
 
 document.querySelector('.next').addEventListener('click', () => {
   clearInterval(intervalId);
-  slideIndex++;
-  if (slideIndex >= slides.length) {
-    slideIndex = 0;
-  }
-  const slideWidth = slides[0].clientWidth;
-  document.querySelector('.slides').style.transform = `translateX(${-slideIndex * slideWidth}px)`;
+  nextSlide();
+  startInterval();
 });
+
+updateSlides();
+startInterval();

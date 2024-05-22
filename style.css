@@ -11,10 +11,12 @@ body {
 }
 
 header {
-  background-color: #333;
+  display: flex;
+  justify-content: end;
+  background-color: #000000;
   color: #fff;
   padding: 20px 0;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .navigation-container nav ul {
@@ -23,6 +25,7 @@ header {
   margin: 0;
   display: flex;
   justify-content: center;
+  font-weight: bold;
 }
 
 .navigation-container nav ul li {
@@ -91,6 +94,37 @@ header {
   text-decoration: underline;
 }
 
+.block1 {
+  font-family: "Russo One", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  width: 100%;
+  background-color: inherit;
+  background-color: #333;
+  text-align: center;
+  color: #ffffff;
+}
+
+.block2 {
+  display: flex;
+  background-color: #fff; 
+  padding: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-text {
+  color: #000000;
+  font-family: "Russo One", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  background-color: inherit;
+}
+.container {
+  background-color: #333;
+  padding: 20px 0; 
+}
+
 #modal {
   display: none;
   position: fixed;
@@ -141,6 +175,21 @@ header {
 .rent-page-container {
   display: flex;
   align-items: center;  
+}
+
+.form-feedback {
+  font-family: "Cuprum", sans-serif;
+  width: 100%;
+  max-width: 400px;
+  background-color:#ffffff;
+  border-radius: 2%;
+}
+
+.form-auth {
+  font-family: "Cuprum", sans-serif;
+  width: 100%;
+  max-width: 400px;
+  background-color:#ffffff;
 }
 
 .img-rent-page {
