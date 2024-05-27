@@ -167,14 +167,11 @@ header {
   font-size: 18px;
 }
 
-.img-rent-page {
-  width: 50%;
-  height: 50px;
-}
-
 .rent-page-container {
   display: flex;
-  align-items: center;  
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
 }
 
 .form-feedback {
@@ -192,17 +189,57 @@ header {
   background-color:#ffffff;
 }
 
-.img-rent-page {
-  float: left;
+.main-img-rent-page {
+  flex: 0 0 330px;
   margin-right: 20px;
 }
 
-.img-rent-page img {
-  max-width: 100%;
-  height: auto;
-  width: 330px;
+.main-img-rent-page img {
+  height: 550px;
+  padding-left: 50px;
+  padding-top: 80px;
 }
 
 .container-info {
-  overflow: hidden;
+  flex: 1;
+}
+
+.commonTitle {
+  font-family: 'Russo One';
+  padding-left: 55px;
+  padding-top: 70px;
+}
+
+.additional-photos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.additional-photos img {
+  width: 30%;
+  max-height: 200px;
+  object-fit: cover;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+.specifications {
+  flex: 1;
+  width: 100%;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.specifications table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.specifications th, .specifications td {
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: left;
 }
