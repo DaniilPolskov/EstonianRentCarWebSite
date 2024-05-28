@@ -42,10 +42,10 @@
 
   <div class="slider">
     <div class="slides">
-      <img src="images/cars.jpg" alt="Slide 1">
-      <img src="images/car-park.jpg" alt="Slide 2">
-      <img src="/images/car-info.jpg" alt="Slide 3">
-      <img src="/images/help.jpg" alt="Slide 4">
+      <img src="images/car1.jpg" alt="Slide 1">
+      <img src="images/car2.jpg" alt="Slide 2">
+      <img src="/images/car3.jpg" alt="Slide 3">
+      <img src="/images/car4.jpg" alt="Slide 4">
     </div>
     <div class="indicators"></div>
   </div>
@@ -60,11 +60,11 @@
     <div class="form-text">
       <form action="/php/submit_form.php" method="post" class="feedback-form">
         <h1>Обратная связь:</h1>
-        <label for="email">Email:</label><br>
+        <label for="email" id="email-feedback">Email:</label><br>
         <input type="email" id="email" name="email" style="width: 250px;"><br>
-        <label for="message">Сообщение:</label><br>
+        <label for="message" id="message-feedback">Сообщение:</label><br>
         <input id="message" name="message" style="width: 400px; height: 100px;"></textarea><br>
-          <input type="submit" value="Отправить">
+          <input type="submit" id="submit" value="Отправить">
       </form>
     </div>
   </div>

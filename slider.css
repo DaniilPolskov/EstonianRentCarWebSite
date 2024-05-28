@@ -30,26 +30,6 @@ button {
   cursor: pointer;
 }
 
-.prev {
-  left: 0;
-  background-image: url("/images/prev.png");
-  background-size: cover;
-  width: 70px;
-  height: 70px;
-  border-radius: 40%;
-  cursor: pointer;
-}
-
-.next {
-  right: 0;
-  background-image: url("/images/next.png");
-  background-size: cover;
-  width: 70px;
-  height: 70px;
-  border-radius: 40%;
-  cursor: pointer;
-}
-
 .indicators {
   text-align: center;
   position: absolute;

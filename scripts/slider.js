@@ -47,17 +47,6 @@ slides.forEach((_, index) => {
 
 const dots = document.querySelectorAll('.indicators .dot');
 
-document.querySelector('.prev').addEventListener('click', () => {
-  clearInterval(intervalId);
-  prevSlide();
-  startInterval();
-});
-
-document.querySelector('.next').addEventListener('click', () => {
-  clearInterval(intervalId);
-  nextSlide();
-  startInterval();
-});
 
 updateSlides();
 startInterval();

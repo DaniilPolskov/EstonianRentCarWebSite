@@ -169,9 +169,7 @@ header {
 
 .rent-page-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
+  align-items: flex-start;
 }
 
 .form-feedback {
@@ -190,14 +188,12 @@ header {
 }
 
 .main-img-rent-page {
-  flex: 0 0 330px;
   margin-right: 20px;
+  margin-left: 20px;
 }
 
 .main-img-rent-page img {
   height: 550px;
-  padding-left: 50px;
-  padding-top: 80px;
 }
 
 .container-info {
@@ -207,19 +203,18 @@ header {
 .commonTitle {
   font-family: 'Russo One';
   padding-left: 55px;
-  padding-top: 70px;
+  padding-top: 55px;
 }
 
-.additional-photos {
+.right-block-info {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-.additional-photos img {
+.right-block-info img {
   width: 30%;
   max-height: 200px;
-  object-fit: cover;
   border: 1px solid #ccc;
   margin-bottom: 10px;
 }
@@ -242,4 +237,80 @@ header {
   padding: 10px;
   border: 1px solid #ccc;
   text-align: left;
+}
+
+#email-feedback {
+  font-family: "Russo One";
+}
+
+#message-feedback {
+  font-family: "Russo One";
+}
+
+.rent-registration-button {
+  margin-top: 320px;
+  left: 20px;
+  background-color: #333;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  padding: 15px 60px;
+  border-radius: 4px;
+}
+
+.renter-contact-button {
+  margin-top: 320px;
+  left: 380px;
+  background-color: #333;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  padding: 15px 60px;
+  border-radius: 4px;
+}
+
+.rent-registration-button:hover {
+  background-color: #2e2e2e;
+}
+
+.renter-contact-button:hover {
+  background-color: #2e2e2e;
+}
+
+
+.buttton-follow-product {
+  margin-top: 320px;
+  left: 750px;
+  background-size: cover;
+  width: 70px;
+  height: 70px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+
+.like-off {
+  background-image: url(/images/like-off.png);
+}
+
+.like-on {
+  background-image: url(/images/like-on.png);
+}
+
+.description-car{
+  position: absolute;
+  top: 835px;
+  left: 30px;
+}
+
+.info-about-car {
+  position: absolute;
+  top: 890px;
+  left: 30px;
+  width: calc(100% - 40px);
+  max-width: 800px;
+  overflow: auto;
+  font-size: 18px;
+  line-height: 25px;
 }
