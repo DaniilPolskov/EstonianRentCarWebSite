@@ -1,12 +1,13 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Estonian Rent Car</title>
-  <link rel="stylesheet" href="/style.css">
-  <link rel="stylesheet" href="/slider.css">
-  <link rel="stylesheet" href="/auth.css">
+  <title>Автомобили</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../slider.css">
+  <link rel="stylesheet" href="../auth.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400..700;1,400..700&family=Poetsen+One&family=Rubik+Mono+One&family=Russo+One&display=swap" rel="stylesheet">
@@ -15,11 +16,11 @@
   <header class="navigation-container">
     <nav role="navigation">
       <ul class="tab-list">
-        <li><a href="/index.html">HOME</a></li>
-        <li><a href="/pages/cars.html">CARS</a></li>
-        <li><a href="/pages/parks.html">PARKS</a></li>
-        <li><a href="/pages/cars.html">ABOUT</a></li>
-        <li><a href="#" id="singup">SING UP</a></li>
+        <li><a href="../index.html">HOME</a></li>
+        <li><a href="pages/cars.html">CARS</a></li>
+        <li><a href="../pages/parks.html">PARKS</a></li>
+        <li><a href="../pages/about.html">ABOUT</a></li>
+        <li><a href="#" id="signup">SIGN UP</a></li>
       </ul>
     </nav>
   </header>
@@ -27,7 +28,7 @@
   <div id="modal" class="modal">
     <div class="modal-content">
       <span class="close">&times;</span>
-      <form-auth action="/php/login.php" method="post">
+      <form-auth action="../php/login.php" method="post">
         <label id="authorization">Авторизация</label><br>
         <label for="registration-redirect">Нет аккаунта?
         <a href="#">Зарегистрироваться</a></label><br>
@@ -40,36 +41,28 @@
     </div>
   </div>
 
-    <div class="container-info">
-        <p>На странице "Cars" вы найдете широкий выбор машин, доступных для продажи. Независимо от ваших предпочтений — от надежных семейных автомобилей до спортивных и роскошных моделей — мы предлагаем разнообразие автомобилей, чтобы удовлетворить ваши потребности и предпочтения. Каждый автомобиль тщательно отобран и прошел проверку на качество, чтобы гарантировать ваше удовольствие от вождения и безопасность на дорогах. Наши цены конкурентоспособны, а команда экспертов готова помочь вам с выбором и ответить на все ваши вопросы. Приобретите свой идеальный автомобиль прямо сейчас на странице "Автомобили".
-          Мы гордимся качеством и надежностью нашего автопарка, предоставляя клиентам только тщательно проверенные и сертифицированные автомобили. Наши специалисты готовы помочь вам с выбором, учитывая ваши требования к марке, модели, комплектации и бюджету. Приобретите свой идеальный автомобиль уже сегодня на странице "Автомобили" и сделайте вашу машину мечты реальностью.
-        </p>
-      </div>
-    </div>
-
-    <div class="autod-img-block">
-      <a href="car1.html"><img src="/images/car1.jpg" alt="car1">
-        <span>Mercedes-AMG GT</span></a>
-      <a href="car2.html"><img src="/images/car2.jpg" alt="car2">
-        <span>Mercedes-Benz A-класс</span></a>
-      <a href="car3.html"><img src="/images/car3.jpg" alt="car3">
-        <span>W212 Mercedes</span></a>
-      <a href="car4.html"><img src="/images/car4.jpg" alt="car4">
-        <span>Mini Cooper Classic</span></a>
-      <a href="car5.html"><img src="/images/car5.jpg" alt="car5">
-        <span>Mercedes-Benz C-Класс 2018</span></a>
-      <a href="car6.html"><img src="/images/car6.jpg" alt="car6">
-        <span>Mercedes-Benz G-класс</span></a>
-    </div>
-
-  <div class="footer">
-    <a href="/pages/login.html">Помощь</a>
-    <a href="/pages/login.html">Реклама</a>
-    <a href="/pages/login.html">Настройки cookie</a>    
+  <div class="container-info">
+    <p>На странице "Cars" вы найдете широкий выбор машин, доступных для продажи. Независимо от ваших предпочтений — от надежных семейных автомобилей до спортивных и роскошных моделей — мы предлагаем разнообразие автомобилей, чтобы удовлетворить ваши потребности и предпочтения. Каждый автомобиль тщательно отобран и прошел проверку на качество, чтобы гарантировать ваше удовольствие от вождения и безопасность на дорогах. Наши цены конкурентоспособны, а команда экспертов готова помочь вам с выбором и ответить на все ваши вопросы. Приобретите свой идеальный автомобиль прямо сейчас на странице "Автомобили".
+      Мы гордимся качеством и надежностью нашего автопарка, предоставляя клиентам только тщательно проверенные и сертифицированные автомобили. Наши специалисты готовы помочь вам с выбором, учитывая ваши требования к марке, модели, комплектации и бюджету. Приобретите свой идеальный автомобиль уже сегодня на странице "Автомобили" и сделайте вашу машину мечты реальностью.
+    </p>
   </div>
 
-  <script src="/scripts/slider.js"></script>
-  <script src="/scripts/auth.js"></script>
+  <div class="autod-img-block">
+    <a href="car1.html"><img src="../images/car1.jpg" alt="car1"><span>Mercedes-AMG GT</span></a>
+    <a href="car2.html"><img src="../images/car2.jpg" alt="car2"><span>Mercedes-Benz A-класс</span></a>
+    <a href="car3.html"><img src="../images/car3.jpg" alt="car3"><span>W212 Mercedes</span></a>
+    <a href="car4.html"><img src="../images/car4.jpg" alt="car4"><span>Mini Cooper Classic</span></a>
+    <a href="car5.html"><img src="../images/car5.jpg" alt="car5"><span>Mercedes-Benz C-Класс 2018</span></a>
+    <a href="car6.html"><img src="../images/car6.jpg" alt="car6"><span>Mercedes-Benz G-класс</span></a>
+  </div>
 
+  <div class="footer">
+    <a href="pages/login.html">Помощь</a>
+    <a href="pages/login.html">Реклама</a>
+    <a href="pages/login.html">Настройки cookie</a>    
+  </div>
+
+  <script src="scripts/slider.js"></script>
+  <script src="scripts/auth.js"></script>
 </body>
 </html>

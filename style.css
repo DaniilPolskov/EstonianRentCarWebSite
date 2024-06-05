@@ -120,6 +120,7 @@ header {
   font-style: normal;
   background-color: inherit;
 }
+
 .container {
   background-color: #333;
   padding: 20px 0; 
@@ -184,7 +185,7 @@ header {
   font-family: "Cuprum", sans-serif;
   width: 100%;
   max-width: 400px;
-  background-color:#ffffff;
+  background-color: #494949;
 }
 
 .main-img-rent-page {
@@ -277,7 +278,6 @@ header {
   background-color: #2e2e2e;
 }
 
-
 .buttton-follow-product {
   margin-top: 320px;
   left: 750px;
@@ -289,13 +289,12 @@ header {
   outline: none;
 }
 
-
 .like-off {
-  background-image: url(/images/like-off.png);
+  background-image: url(images/like-off.png);
 }
 
 .like-on {
-  background-image: url(/images/like-on.png);
+  background-image: url(images/like-on.png);
 }
 
 .description-car{

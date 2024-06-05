@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Estonian Rent Car</title>
-  <link rel="stylesheet" href="/style.css">
-  <link rel="stylesheet" href="/slider.css">
-  <link rel="stylesheet" href="/auth.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="slider.css">
+  <link rel="stylesheet" href="auth.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400..700;1,400..700&family=Poetsen+One&family=Rubik+Mono+One&family=Russo+One&display=swap" rel="stylesheet">
@@ -15,11 +15,11 @@
   <header class="navigation-container">
     <nav role="navigation">
       <ul class="tab-list">
-        <li><a href="/index.html">HOME</a></li>
-        <li><a href="/pages/cars.html">CARS</a></li>
-        <li><a href="/pages/parks.html">PARKS</a></li>
-        <li><a href="/pages/cars.html">ABOUT</a></li>
-        <li><a href="#" id="singup">SING UP</a></li>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="pages/cars.html">CARS</a></li>
+        <li><a href="pages/parks.html">PARKS</a></li>
+        <li><a href="pages/about.html">ABOUT</a></li>
+        <li><a href="#" id="singup">SIGN UP</a></li>
       </ul>
     </nav>
   </header>
@@ -27,7 +27,7 @@
   <div id="modal" class="modal">
     <div class="modal-content">
       <span class="close">&times;</span>
-      <form-auth action="/php/login.php" method="post">
+      <form action="php/login.php" method="post" class="form-auth">
         <label id="authorization">Авторизация</label><br>
         <label for="registration-redirect">Нет аккаунта?
         <a href="#">Зарегистрироваться</a></label><br>
@@ -36,7 +36,7 @@
         <label for="password">Пароль:</label><br>
         <input type="password" id="password" name="password"><br>
         <input type="submit" id="submit" value="Войти">
-      </form-auth>
+      </form>
     </div>
   </div>
 
@@ -44,8 +44,8 @@
     <div class="slides">
       <img src="images/car1.jpg" alt="Slide 1">
       <img src="images/car2.jpg" alt="Slide 2">
-      <img src="/images/car3.jpg" alt="Slide 3">
-      <img src="/images/car4.jpg" alt="Slide 4">
+      <img src="images/car3.jpg" alt="Slide 3">
+      <img src="images/car4.jpg" alt="Slide 4">
     </div>
     <div class="indicators"></div>
   </div>
@@ -58,7 +58,7 @@
 
   <div class="block2">
     <div class="form-text">
-      <form action="/php/submit_form.php" method="post" class="feedback-form">
+      <form action="php/submit_form.php" method="post" class="feedback-form">
         <h1>Обратная связь:</h1>
         <label for="email" id="email-feedback">Email:</label><br>
         <input type="email" id="email" name="email" style="width: 250px;"><br>
@@ -75,8 +75,7 @@
     <a href="#">Настройки cookie</a>    
   </div>
 
-  <script src="/scripts/slider.js"></script>
-  <script src="/scripts/auth.js"></script>
-
+  <script src="scripts/slider.js"></script>
+  <script src="scripts/auth.js"></script>
 </body>
 </html>
