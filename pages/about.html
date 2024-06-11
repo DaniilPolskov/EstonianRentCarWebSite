@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../auth.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400..700;1,400..700&family=Poetsen+One&family=Rubik+Mono+One&family=Russo+One&display=swap" rel="stylesheet">
+</head>
+<body class="main-body-content">
+  <header class="navigation-container">
+    <nav role="navigation">
+      <ul class="tab-list">
+        <li><a href="../index.html">HOME</a></li>
+        <li><a href="cars.html">CARS</a></li>
+        <li><a href="parks.html">PARKS</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="#" id="singup">SIGN UP</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <form action="php/login.php" method="post" class="form-auth">
+        <label id="authorization">Авторизация</label><br>
+        <label for="registration-redirect">Нет аккаунта?
+        <a href="#">Зарегистрироваться</a></label><br>
+        <label for="username">Логин:</label><br>
+        <input type="text" id="username" name="username"><br>
+        <label for="password">Пароль:</label><br>
+        <input type="password" id="password" name="password"><br>
+        <input type="submit" id="submit" value="Войти">
+      </form>
+    </div>
+  </div>
+
+  <div class="title-about-us">
+    <h1>О нас</h1>  
+  </div>
+
+    
+  <div class="block2">
+    <div class="container-info">
+      <div class="img-about-us">
+        <img src="../images/office-outside.jpg" alt="office-outside">
+        <img src="../images/office-inside.jpg" alt="office-inside">
+      </div>
+      <h2>Наша История</h2>
+      <p>Наша компания была основана в 2005 году и с тех пор мы работаем для того, чтобы предоставить нашим клиентам лучшие условия для аренды автомобилей. Мы гордимся тем, что являемся лидером рынка в Эстонии.</p>
+      <h2>Наши Преимущества</h2>
+      <ul>
+        <li>Широкий выбор автомобилей: от эконом-класса до люксовых моделей.</li>
+        <li>Простые условия аренды и удобное бронирование онлайн.</li>
+        <li>Круглосуточная поддержка клиентов и помощь на дорогах.</li>
+      </ul>
+      <h2>Наша Команда</h2>
+      <p>У нас работает высококвалифицированная команда специалистов, готовых помочь вам в любой ситуации. Мы всегда стремимся улучшать наш сервис и делать его более удобным для наших клиентов.</p>
+    </div>
+  </div>
+</div>
+
+  <div class="contact-info">
+    <h2>Контактная информация</h2>
+    <p>Телефон: +372 1234 5678</p>
+    <p>Email: info@estonianrentcar.ee</p>
+    <p>Адрес: ул. Vana-Viru 12, 15080 Таллинн, Эстония</p>
+  </div>
+
+  <div class="footer">
+    <a href="#">Помощь</a>
+    <a href="#">Реклама</a>
+    <a href="#">Настройки cookie</a>
+  </div>
+
+  <script src="../scripts/slider.js"></script>
+  <script src="../scripts/auth.js"></script>
+
+</body>
+</html>
