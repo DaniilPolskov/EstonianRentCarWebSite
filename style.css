@@ -71,6 +71,11 @@ header {
   text-align: center;
 }
 
+.container {
+  flex-grow: 1;
+  padding: 20px;
+}
+
 .footer {
   background-color: #333;
   color: #fff;
@@ -100,21 +105,10 @@ header {
   color: #ffffff;
 }
 
-.title-about-us {
-  font-family: "Russo One", sans-serif;
-  font-style: normal;
-  width: 100%;
-  background-color: inherit;
-  background-color: #333;
-  text-align: center;
-  color: #ffffff;
-  top: 4px;
-}
-
 .block2 {
   display: flex;
   background-color: #fff; 
-  padding: 50px;
+  padding: 40px;
   justify-content: center;
   align-items: center;
 }
@@ -130,7 +124,6 @@ header {
 .container {
   background-color: #333;
   padding: 20px 0; 
-  flex-grow: 1;
 }
 
 #modal {
@@ -173,8 +166,6 @@ header {
   padding: 20px;
   margin: 0 20px;
   font-size: 18px;
-  text-align: justify;
-  flex: 1;
 }
 
 .rent-page-container {
@@ -204,6 +195,10 @@ header {
 
 .main-img-rent-page img {
   height: 550px;
+}
+
+.container-info {
+  flex: 1;
 }
 
 .commonTitle {
@@ -317,31 +312,4 @@ header {
   overflow: auto;
   font-size: 18px;
   line-height: 25px;
-}
-
-.img-about-us {
-  display: flex;
-  justify-content: space-around;
-  margin-bottom: 20px;
-  border: 15px solid #fff;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-}
-
-.img-about-us img {
-  width: 45%;
-  max-height: 300px;
-  border-radius: 8px;
-  object-fit: cover;
-  margin-bottom: 20px;
-}
-
-.contact-info {
-  background-color: #424242;
-  padding: 20px;
-  text-align: center;
-  color: white;
-}
-
-.contact-info h2 {
-  margin-bottom: 10px;
 }

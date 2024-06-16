@@ -26,7 +26,7 @@
   <div id="modal" class="modal">
     <div class="modal-content">
       <span class="close">&times;</span>
-      <form-auth action="php/login.php" method="post">
+      <form action="../php/login.php" method="post" class="form-auth">
         <label id="authorization">Авторизация</label><br>
         <label for="registration-redirect">Нет аккаунта?
         <a href="#">Зарегистрироваться</a></label><br>
@@ -35,7 +35,7 @@
         <label for="password">Пароль:</label><br>
         <input type="password" id="password" name="password"><br>
         <input type="submit" id="submit" value="Войти">
-      </form-auth>
+      </form>
     </div>
   </div>
 
@@ -132,14 +132,12 @@
     </div>
   
     <div class="footer">
-      <a href="#">Помощь</a>  
+      <a href="#">Помощь</a>
       <a href="#">Реклама</a>
-      <a href="#">Настройки cookie</a>    
+      <a href="#">Настройки cookie</a>      
     </div>
-  
-    <script src="../scripts/slider.js"></script>
+
     <script src="../scripts/auth.js"></script>
     <script src="../scripts/follow-products.js"></script>
-  </body>
-  </html>
-  
+</body>
+</html>
