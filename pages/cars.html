@@ -16,9 +16,9 @@
     <nav role="navigation">
       <ul class="tab-list">
         <li><a href="../index.html">HOME</a></li>
-        <li><a href="pages/cars.html">CARS</a></li>
-        <li><a href="../pages/parks.html">PARKS</a></li>
-        <li><a href="../pages/about.html">ABOUT</a></li>
+        <li><a href="cars.html">CARS</a></li>
+        <li><a href="parks.html">PARKS</a></li>
+        <li><a href="about.html">ABOUT</a></li>
         <li><a href="#" id="singup">SIGN UP</a></li>
       </ul>
     </nav>
@@ -27,15 +27,28 @@
   <div id="modal" class="modal">
     <div class="modal-content">
       <span class="close">&times;</span>
-      <form action="../php/login.php" method="post" class="form-auth">
+      <form action="../php/login.php" method="post" class="form-auth" id="login-form">
         <label id="authorization">Авторизация</label><br>
         <label for="registration-redirect">Нет аккаунта?
-        <a href="#">Зарегистрироваться</a></label><br>
+          <a href="#" id="show-register">Зарегистрироваться</a>
+        </label><br>
         <label for="username">Логин:</label><br>
         <input type="text" id="username" name="username"><br>
         <label for="password">Пароль:</label><br>
         <input type="password" id="password" name="password"><br>
         <input type="submit" id="submit" value="Войти">
+      </form>
+
+      <form action="../php/register.php" method="post" class="form-auth" id="register-form" style="display: none;">
+        <label id="authorization">Регистрация</label><br>
+        <label for="login-redirect">Уже есть аккаунт?
+          <a href="#" id="show-login">Войти</a>
+        </label><br>
+        <label for="username">Логин:</label><br>
+        <input type="text" id="username" name="username"><br>
+        <label for="password">Пароль:</label><br>
+        <input type="password" id="password" name="password"><br>
+        <input type="submit" id="submit" value="Зарегистрироваться">
       </form>
     </div>
   </div>
